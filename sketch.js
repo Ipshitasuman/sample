@@ -92,17 +92,17 @@ function draw(){
 
         if(mousePressedOver(bol)){
             bol.visible = false;
-            gameState === PLAY;
+            gameState = PLAY;
         }
     
-
+    }
     if(gameState === PLAY){
         background(bg);
         spawnZombie();
         spawnScary();
     }
 
-    if(gameState = END){
+    if(gameState === END){
         go.visible = true;
         go.lifetime = 100;
         yrd.visible = true;
